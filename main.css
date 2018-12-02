@@ -1,6 +1,6 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 40px auto;
+    width: 40%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -13,14 +13,21 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
+     font-size: 1.25em;
     text-decoration: none;
     color: #999;
 }
+a2 {
+     font-size: 1.25em;
+    text-decoration: none;
+    color: #99;
+}
+
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h2 {
@@ -46,4 +53,60 @@ ul.posts li {
     list-style: none;
 }
 : 160px;
+}
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+    .tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:15px 25px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#7FB5DA;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
 }
