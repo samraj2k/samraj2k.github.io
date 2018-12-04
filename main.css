@@ -15,13 +15,19 @@ nav ul li, footer ul li {
 a {
      font-size: 1.25em;
     text-decoration: none;
-    color: #999;
+    color: #575252;
 }
 a2 {
      font-size: 1.25em;
     text-decoration: none;
-    color: #99;
+    color: #010101;
 }
+a3 {
+     font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+}
+
 
 a:hover {
     text-decoration: underline;
@@ -86,12 +92,12 @@ ul.posts li {
 }
 
 .tab-links a:hover {
-    background:#a7cce5;
+    background:#fff;
     text-decoration:none;
 }
 
 li.active a, li.active a:hover {
-    background:#fff;
+    background:#F3551C;
     color:#4c4c4c;
 }
 
